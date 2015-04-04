@@ -1,0 +1,28 @@
+{
+  "user": {
+    "id": 1,
+    "permission_level_id": 200,
+    "user_name": "Barbara_Lowe",
+    "date_entered": "2000-01-11 00:00:00",
+    "initials": "BL",
+    "flag_active": false,
+    "first_name": "Barbara",
+    "last_name": "Lowe",
+    "middle_name": null,
+    "new_user_name": "Barbara_Lowe",
+    "email_address": null,
+    "view_confidential_filing": false,
+    "bureaus": [ 1,2,3 ]
+  },
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z"
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

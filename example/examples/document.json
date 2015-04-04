@@ -1,0 +1,36 @@
+{
+  "document":{
+    "id": 1,
+    "document_id": 86423,
+    "file_type_id": 32767,
+    "description": "103",
+    "file_type" : {
+      "id": 103,
+      "file_extension": "pdf",
+      "file_type_description": "Adobe Acrobat PDF",
+      "mime_type": "application/pdf"
+    },
+    "page_count_display": "Pages 1 to 19",
+    "page_count": 19,
+    "byte_size": 0,
+    "transmission_start_date": "1996-09-17 00:00:00",
+    "transmission_end_date": "1996-09-19 00:00:00",
+    "flag_archived": true,
+    "date_processed": "1996-09-17 00:00:00",
+    "native_app_byte_size": 0,
+    "native_app_id_file_type": 103,
+    "comment": "1",
+    "flag_migrated_from_rips": false,
+    "flag_conv_problem": null,
+    "ocr_flag": "P",
+    "date_ocr": "2008-10-29 17:04:08",
+    "date_modified": null,
+    "date_pdf_modified": null,
+    "attachment_id": null,
+    "official_title": null,
+    "file_description": null,
+    "edocs_link": null,
+    "file_name": null,
+    "col_24": null
+  }
+}

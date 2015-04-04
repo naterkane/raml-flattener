@@ -1,0 +1,159 @@
+{
+  "users": [{
+    "id": 1,
+    "permission_level_id": 200,
+    "user_name": "Barbara_Lowe",
+    "date_entered": "2000-01-11 00:00:00",
+    "initials": "BL",
+    "flag_active": false,
+    "first_name": "Barbara",
+    "last_name": "Lowe",
+    "middle_name": null,
+    "new_user_name": "Barbara_Lowe",
+    "email_address": null,
+    "view_confidential_filing": false
+  },
+  {
+    "id": 2,
+    "permission_level_id": 450,
+    "user_name": "Jason_Lewis",
+    "date_entered": "2002-07-11 00:00:00",
+    "initials": "JL",
+    "flag_active": true,
+    "first_name": "Jason",
+    "last_name": "Lewis",
+    "middle_name": null,
+    "new_user_name": "Jason_Brown",
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 3,
+    "permission_level_id": 500,
+    "user_name": "Patricia_Rawlings",
+    "date_entered": "1997-07-10 00:00:00",
+    "initials": "PR",
+    "flag_active": false,
+    "first_name": null,
+    "last_name": null,
+    "middle_name": null,
+    "new_user_name": null,
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 6,
+    "permission_level_id": 500,
+    "user_name": "Melissa_Askew",
+    "date_entered": "1997-09-25 00:00:00",
+    "initials": "MA",
+    "flag_active": true,
+    "first_name": "Melisa",
+    "last_name": "Askew",
+    "middle_name": null,
+    "new_user_name": null,
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 7,
+    "permission_level_id": 425,
+    "user_name": "Marlene_Dortch",
+    "date_entered": "2002-07-11 00:00:00",
+    "initials": "MD",
+    "flag_active": true,
+    "first_name": "Marlene",
+    "last_name": "Dortch",
+    "middle_name": null,
+    "new_user_name": "Marlene_Dortch",
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 8,
+    "permission_level_id": 450,
+    "user_name": "bcaton",
+    "date_entered": "1997-10-21 00:00:00",
+    "initials": "BC",
+    "flag_active": false,
+    "first_name": null,
+    "last_name": null,
+    "middle_name": null,
+    "new_user_name": null,
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 9,
+    "permission_level_id": 450,
+    "user_name": "William_Caton",
+    "date_entered": "1997-10-23 00:00:00",
+    "initials": "WC",
+    "flag_active": false,
+    "first_name": null,
+    "last_name": null,
+    "middle_name": null,
+    "new_user_name": "William_Caton",
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 11,
+    "permission_level_id": 450,
+    "user_name": "msalas",
+    "date_entered": "1997-12-22 00:00:00",
+    "initials": "MS",
+    "flag_active": false,
+    "first_name": null,
+    "last_name": null,
+    "middle_name": null,
+    "new_user_name": null,
+    "email_address": null,
+    "view_confidential_filing": false
+  },
+  {
+    "id": 14,
+    "permission_level_id": 500,
+    "user_name": "Kiat_Neo",
+    "date_entered": "1998-02-24 00:00:00",
+    "initials": "KN",
+    "flag_active": false,
+    "first_name": null,
+    "last_name": null,
+    "middle_name": null,
+    "new_user_name": "Kiat_Neo",
+    "email_address": null,
+    "view_confidential_filing": true
+  },
+  {
+    "id": 17,
+    "permission_level_id": 200,
+    "user_name": "lmarshal",
+    "date_entered": "1998-06-29 00:00:00",
+    "initials": "LM",
+    "flag_active": false,
+    "first_name": null,
+    "last_name": null,
+    "middle_name": null,
+    "new_user_name": null,
+    "email_address": null,
+    "view_confidential_filing": false
+  }],
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z",
+      "pagination": {
+        "page": 3,
+        "per_page": 2,
+        "page_count": 500,
+        "total_count": 1000
+      }
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

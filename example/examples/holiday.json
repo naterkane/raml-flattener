@@ -1,0 +1,20 @@
+{
+  "holiday": {
+    "id" : 15,
+    "holiday_date" : "2002-01-01 00:00:00",
+    "holiday_description" : "New Year's Day",
+    "holiday_type" : "L",
+    "next_bus_date" : "Jan  2 2002 12:00:00:000AM"
+  },
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z"
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

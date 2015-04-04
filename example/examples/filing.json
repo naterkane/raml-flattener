@@ -1,0 +1,78 @@
+{
+  "filing": {
+    "id_trans": 5005409928,
+    "id_proceeding": 502800215,
+    "filer": {
+      "applicant_name": null,
+      "author_name": "Lorrie M. Marcil",
+      "lawfirm_name": "Sidley & Austin",
+      "contact_name": "applicant_name",
+      "contact_email_id": "1marcil@sidley.com",
+      "address": {
+        "line_1": "1722 Eye Street, N.W.",
+        "line_2": null,
+        "city": "Washington",
+        "id_state": "DC",
+        "postal_code": "20006",
+        "country": "US"
+      }
+    },
+    "submission_type": {
+      "id": 52,
+      "value": "NOTICE OF PRE-HEARING CONFERENCE"
+    },
+    "submission_status": {
+      "id": 40,
+      "value": null
+    },
+    "viewing_status": "10",
+    "file_numer": null,
+    "subject": null,
+    "delagated_authority_number": null,
+    "exparte_late_filed": true,
+    "date_submission": "1999-12-03 11:02:46",
+    "date_filed": "1999-11-30 00:00:00",
+    "date_rcpt": "1999-11-30 00:00:00",
+    "date_released": null,
+    "date_accepted": null,
+    "date_disseminated": "1999-12-06 07:54:53",
+    "confirmation_number": "1999123106368",
+    "date_transmission_completed": "1999-12-03 11:02:57",
+    "server_name": "izzy.fcc.gov",
+    "path_info": "/prod/ecfs/SCAN_upload.hts",
+    "remote_addr": "165.135.0.254",
+    "remote_host": "165.135.0.254",
+    "remote_ident": null,
+    "remote_user": null,
+    "browser": "Mozilla/4.04 [en] (Win95; I)",
+    "filed_from": "S",
+    "id_user": 40,
+    "ruleno": null,
+    "id_ruleno": null,
+    "flag_migrated_from_rips": null,
+    "date_pn_ex_parte": null,
+    "total_page_count": 6,
+    "brief_comment_flag": 0,
+    "id_viewing_status": null,
+    "date_modified": null,
+    "bureau_id_num": null,
+    "id_edocs": null,
+    "report_number": null,
+    "fcc_record": null,
+    "date_comment_period": null,
+    "date_reply_comment": null,
+    "small_business_impact": null,
+    "reg_flex_analysis": null
+  },
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z"
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

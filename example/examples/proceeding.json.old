@@ -1,0 +1,64 @@
+{
+  "proceeding_id": "14-28",
+  "proceeding_name": "14-28",
+  "description": "Protecting and Promoting the Open Internet",
+  "filings": {
+    "last_30": "588625",
+    "total": "2026751"
+  },
+  "bureau": {
+    "name": "General (Multiple Bureaus)",
+    "code": "GN",
+    "id":   ""
+  },
+  "date_created": "sensible date format",
+  "date_closed": "whatever",
+  "subject": "how is this different from description?",
+  "state": "",
+  "consolidated": "RM-10803",
+  "comment_period": "ask hursh, other periods?",
+  "track_changes": [
+    {
+      "text": "Hursh Prasad changed 14-28, Date Closed from 'never' to 'why?' on Feb 1 2014",
+      "actor": {
+        "name": "Hursh Prasad",
+        "id": 123
+      },
+      "object": {
+        "type": "proceeding",
+        "id": 60001,
+        "name": "14-28"
+      },
+      "on": "2014-02-01 01:01:01 EST",
+      "changes": [
+        {
+          "date_closed": {
+            "old": "never",
+            "new": "why?"
+          }
+        }
+      ]
+    },
+    {
+      "text": "Hursh Prasad changed 14-28, Date Closed from 'why?' to 'whatever' on Feb 2 2014",
+      "actor": {
+        "name": "Hursh Prasad",
+        "id": 123
+      },
+      "object": {
+        "type": "proceeding",
+        "id": 60001,
+        "name": "14-28"
+      },
+      "on": "2014-02-02 01:02:01 EST",
+      "changes": [
+        {
+          "date_closed": {
+            "old": "why?",
+            "new": "whatever"
+          }
+        }
+      ]
+    }
+  ]
+}

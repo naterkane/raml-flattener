@@ -1,0 +1,92 @@
+[
+  {
+    "id" : 1,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 6,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 16 2013  9:35:16:486AM",
+    "changes" : "Status updated from ACCEPTED to REJECTED<br/>"
+  },
+  {
+    "id" : 2,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 6,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 25 2013  2:29:40:533PM",
+    "changes" : "Name of Filer updated from CPUC to California Public Utilities Commission<br/>"
+  },
+  {
+    "id" : 3,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 6,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 25 2013  2:30:32:513PM",
+    "changes" : "Name of Filer updated from CPUC to California Public Utilities Commission<br/>"
+  },
+  {
+    "id" : 4,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 70,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 26 2013  8:12:47:610AM",
+    "changes" : "Date Filed updated from 2012-11-06 00:00:00.0 to Thu Dec 06 00:00:00 EST 2012<br/> Date Received updated from 2012-11-06 00:00:00.0 to Thu Dec 06 00:00:00 EST 2012<br/>"
+  },
+  {
+    "id" : 5,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 70,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 26 2013  8:16:24:023AM",
+    "changes" : "Date Filed updated from 2012-11-06 00:00:00.0 to Thu Dec 06 00:00:00 EST 2012<br/>Date Received updated from 2012-11-06 00:00:00.0 to Thu Dec 06 00:00:00 EST 2012<br/>"
+  },
+  {
+    "id" : 6,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 2,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 26 2013 11:24:20:463AM",
+    "changes" : "Lawfirm Name updated from biongham McCutchen LLP to bingham McCutchen LLP<br/>"
+  },
+  {
+    "id" : 7,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 6,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 29 2013  3:44:53:656PM",
+    "changes" : "Status updated from ACCEPTED to REJECTED<br/>"
+  },
+  {
+    "id" : 8,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 6,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 29 2013  3:47:07:540PM",
+    "changes" : "Status updated from ACCEPTED to REJECTED<br/>"
+  },
+  {
+    "id" : 9,
+    "record_id" : 1012302720,
+    "record_type" : "PROCEEDING",
+    "user_id" : 6,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 29 2013  4:12:14:580PM",
+    "changes" : "Ex Parte updated from Y to N<br/>"
+  },
+  {
+    "id" : 10,
+    "record_id" : 2147483647,
+    "record_type" : "SUBMISSION",
+    "user_id" : 72,
+    "change_time" : "0000-00-00 00:00:00",
+    "change_time_old" : "Jul 30 2013  2:25:20:956PM",
+    "changes" : "Type updated from CO to PT<br/>"
+  }
+]

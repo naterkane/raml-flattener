@@ -1,0 +1,309 @@
+{
+  "states": [{
+    "id": 1,
+    "state_code": "AK",
+    "state_name": "ALASKA"
+  },
+  {
+    "id": 2,
+    "state_code": "AL",
+    "state_name": "ALABAMA"
+  },
+  {
+    "id": 3,
+    "state_code": "AR",
+    "state_name": "ARKANSAS"
+  },
+  {
+    "id": 4,
+    "state_code": "AZ",
+    "state_name": "ARIZONA"
+  },
+  {
+    "id": 5,
+    "state_code": "CA",
+    "state_name": "CALIFORNIA"
+  },
+  {
+    "id": 6,
+    "state_code": "CO",
+    "state_name": "COLORADO"
+  },
+  {
+    "id": 7,
+    "state_code": "CT",
+    "state_name": "CONNECTICUT"
+  },
+  {
+    "id": 8,
+    "state_code": "DC",
+    "state_name": "DISTRICT OF COLUMBIA"
+  },
+  {
+    "id": 9,
+    "state_code": "DE",
+    "state_name": "DELAWARE"
+  },
+  {
+    "id": 10,
+    "state_code": "FL",
+    "state_name": "FLORIDA"
+  },
+  {
+    "id": 11,
+    "state_code": "GA",
+    "state_name": "GEORGIA"
+  },
+  {
+    "id": 12,
+    "state_code": "GU",
+    "state_name": "GUAM"
+  },
+  {
+    "id": 13,
+    "state_code": "HI",
+    "state_name": "HAWAII"
+  },
+  {
+    "id": 14,
+    "state_code": "IA",
+    "state_name": "IOWA"
+  },
+  {
+    "id": 15,
+    "state_code": "ID",
+    "state_name": "IDAHO"
+  },
+  {
+    "id": 16,
+    "state_code": "IL",
+    "state_name": "ILLINOIS"
+  },
+  {
+    "id": 17,
+    "state_code": "IN",
+    "state_name": "INDIANA"
+  },
+  {
+    "id": 18,
+    "state_code": "KS",
+    "state_name": "KANSAS"
+  },
+  {
+    "id": 19,
+    "state_code": "KY",
+    "state_name": "KENTUCKY"
+  },
+  {
+    "id": 20,
+    "state_code": "LA",
+    "state_name": "LOUISIANA"
+  },
+  {
+    "id": 21,
+    "state_code": "MA",
+    "state_name": "MASSACHUSETTS"
+  },
+  {
+    "id": 22,
+    "state_code": "MD",
+    "state_name": "MARYLAND"
+  },
+  {
+    "id": 24,
+    "state_code": "ME",
+    "state_name": "MAINE"
+  },
+  {
+    "id": 25,
+    "state_code": "MI",
+    "state_name": "MICHIGAN"
+  },
+  {
+    "id": 26,
+    "state_code": "MN",
+    "state_name": "MINNESOTA"
+  },
+  {
+    "id": 27,
+    "state_code": "MO",
+    "state_name": "MISSOURI"
+  },
+  {
+    "id": 28,
+    "state_code": "MS",
+    "state_name": "MISSISSIPPI"
+  },
+  {
+    "id": 29,
+    "state_code": "MT",
+    "state_name": "MONTANA"
+  },
+  {
+    "id": 30,
+    "state_code": "NC",
+    "state_name": "NORTH CAROLINA"
+  },
+  {
+    "id": 31,
+    "state_code": "ND",
+    "state_name": "NORTH DAKOTA"
+  },
+  {
+    "id": 32,
+    "state_code": "NE",
+    "state_name": "NEBRASKA"
+  },
+  {
+    "id": 33,
+    "state_code": "NH",
+    "state_name": "NEW HAMPSHIRE"
+  },
+  {
+    "id": 34,
+    "state_code": "NJ",
+    "state_name": "NEW JERSEY"
+  },
+  {
+    "id": 35,
+    "state_code": "NM",
+    "state_name": "NEW MEXICO"
+  },
+  {
+    "id": 36,
+    "state_code": "NV",
+    "state_name": "NEVADA"
+  },
+  {
+    "id": 37,
+    "state_code": "NY",
+    "state_name": "NEW YORK"
+  },
+  {
+    "id": 38,
+    "state_code": "OH",
+    "state_name": "OHIO"
+  },
+  {
+    "id": 39,
+    "state_code": "OK",
+    "state_name": "OKLAHOMA"
+  },
+  {
+    "id": 40,
+    "state_code": "OR",
+    "state_name": "OREGON"
+  },
+  {
+    "id": 41,
+    "state_code": "PA",
+    "state_name": "PENNSYLVANIA"
+  },
+  {
+    "id": 42,
+    "state_code": "PR",
+    "state_name": "PUERTO RICO"
+  },
+  {
+    "id": 43,
+    "state_code": "RI",
+    "state_name": "RHODE ISLAND"
+  },
+  {
+    "id": 44,
+    "state_code": "SC",
+    "state_name": "SOUTH CAROLINA"
+  },
+  {
+    "id": 45,
+    "state_code": "SD",
+    "state_name": "SOUTH DAKOTA"
+  },
+  {
+    "id": 46,
+    "state_code": "TN",
+    "state_name": "TENNESSEE"
+  },
+  {
+    "id": 47,
+    "state_code": "TX",
+    "state_name": "TEXAS"
+  },
+  {
+    "id": 48,
+    "state_code": "UT",
+    "state_name": "UTAH"
+  },
+  {
+    "id": 49,
+    "state_code": "VA",
+    "state_name": "VIRGINIA"
+  },
+  {
+    "id": 51,
+    "state_code": "VI",
+    "state_name": "VIRGIN ISLANDS"
+  },
+  {
+    "id": 52,
+    "state_code": "VT",
+    "state_name": "VERMONT"
+  },
+  {
+    "id": 53,
+    "state_code": "WA",
+    "state_name": "WASHINGTON"
+  },
+  {
+    "id": 54,
+    "state_code": "WI",
+    "state_name": "WISCONSIN"
+  },
+  {
+    "id": 55,
+    "state_code": "WV",
+    "state_name": "WEST VIRGINIA"
+  },
+  {
+    "id": 56,
+    "state_code": "WY",
+    "state_name": "WYOMING"
+  },
+  {
+    "id": 57,
+    "state_code": "AS",
+    "state_name": "AMRICAN SAMOA"
+  },
+  {
+    "id": 58,
+    "state_code": "FM",
+    "state_name": "FEDERATED STATES OF MICRONESIA"
+  },
+  {
+    "id": 59,
+    "state_code": "MH",
+    "state_name": "MARSHALL ISLANDS"
+  },
+  {
+    "id": 60,
+    "state_code": "MP",
+    "state_name": "NORTHERN MARIANA ISLANDS"
+  }],
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z",
+      "pagination": {
+        "page": 3,
+        "per_page": 2,
+        "page_count": 500,
+        "total_count": 1000
+      }
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}
