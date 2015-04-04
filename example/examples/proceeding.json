@@ -1,0 +1,98 @@
+{
+  "proceeding": {
+    "id": 300000,
+    "proceeding_name": "RM-7264",
+    "proceeding_description": "",
+    "consolidated_proceeding_id": 303529,
+    "create_date": "1991-10-22 00:00:00",
+    "bureau": {
+      "id": 1,
+      "bureau_code": "MM",
+      "bureau_name": "Mass Media Bureau",
+      "edocs_bureau_code": null
+    },
+    "flag_rulemaking": true,
+    "flag_historical_data_exists": false,
+    "flag_archived": false,
+    "file_number": "COUNTERPROPOSAL IN MM DOCKET NO. 89-459",
+    "city": "LA GRANGE, TX",
+    "state": "TX",
+    "callsign": "",
+    "channel": "283C3",
+    "applicant_name": "FAYETTE BROADCASTING CORPORATION",
+    "subject": "AMENDMENT OF FM TABLE OF ALLOTMENTS",
+    "appeal": "",
+    "filed_by": "R. CLARK WADLOW, ATTORNEY ON 12-11-89",
+    "rule_section": "73.202(B)",
+    "exparte_late_filed": true,
+    "flag_closed": true,
+    "date_archived": "1993-12-30 00:00:00",
+    "date_closed": "1993-12-30 00:00:00",
+    "date_rule_board_decision": null,
+    "date_public_notice": "1990-02-06 00:00:00",
+    "date_commission_decision": null,
+    "date_effective": null,
+    "date_reporting_and_order": "1993-12-09 00:00:00",
+    "date_nprm": null,
+    "date_oral_argument": null,
+    "date_initial_decision": null,
+    "date_designated": null,
+    "location": "LA GRANGE, TX",
+    "flag_internet_file": false,
+    "recent_filing_count": 0,
+    "total_filing_count": 0,
+    "flag_small_business_impact": null,
+    "bureau_id_num": "",
+    "face_card_id": null,
+    "track_changes": [{
+      "id": 202072,
+      "record_id": 300951,
+      "record_type": "PROCEEDING",
+      "user_id": 88,
+      "change_time": null,
+      "changes": [{
+        "field": "Description",
+        "old": "",
+        "new": null
+      },{
+        "field": "Date Closed",
+        "old": null,
+        "new": "2014-09-22T14:08:38.000Z"
+      },{
+        "field": "Filing Closed",
+        "old": false,
+        "new": true
+      }]
+    }, {
+      "id": 202069,
+      "record_id": 300996,
+      "record_type": "PROCEEDING",
+      "user_id": 88,
+      "change_time": null,
+      "changes": [{
+        "field": "Description",
+        "old": "",
+        "new": null
+      },{
+        "field": "Date Closed",
+        "old": null,
+        "new": "2014-09-22T14:08:38.000Z"
+      },{
+        "field": "Filing Closed",
+        "old": false,
+        "new": true
+      }]
+    }]
+  },
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z"
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

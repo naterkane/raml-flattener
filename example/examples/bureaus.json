@@ -1,0 +1,217 @@
+{
+  "bureaus": [{
+    "id" : 1,
+    "bureau_code" : "MM",
+    "bureau_name" : "Mass Media Bureau",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 2,
+    "bureau_code" : "CC",
+    "bureau_name" : "Common Carrier Bureau",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 3,
+    "bureau_code" : "PR",
+    "bureau_name" : "Private Radio Bureau",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 4,
+    "bureau_code" : "GN",
+    "bureau_name" : "General (Multiple Bureaus)",
+    "edocs_bureau_code" : "GEN"
+  },
+  {
+    "id" : 5,
+    "bureau_code" : "FO",
+    "bureau_name" : "Field Operations Bureau",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 6,
+    "bureau_code" : "ET",
+    "bureau_name" : "Office of Engineering and Technology",
+    "edocs_bureau_code" : "OET"
+  },
+  {
+    "id" : 7,
+    "bureau_code" : "PP",
+    "bureau_name" : "Office of Plans and Policy",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 8,
+    "bureau_code" : "GC",
+    "bureau_name" : "Office of General Counsel",
+    "edocs_bureau_code" : "OGC"
+  },
+  {
+    "id" : 9,
+    "bureau_code" : "MD",
+    "bureau_name" : "Office of Managing Director",
+    "edocs_bureau_code" : "OMD"
+  },
+  {
+    "id" : 10,
+    "bureau_code" : "CS",
+    "bureau_name" : "Cable Services Bureau",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 11,
+    "bureau_code" : "IC",
+    "bureau_name" : "Office of International Communications",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 12,
+    "bureau_code" : "WT",
+    "bureau_name" : "Wireless Telecommunications Bureau",
+    "edocs_bureau_code" : "WTB"
+  },
+  {
+    "id" : 13,
+    "bureau_code" : "CI",
+    "bureau_name" : "Compliance and Information Bureau",
+    "edocs_bureau_code" : "CIB"
+  },
+  {
+    "id" : 14,
+    "bureau_code" : "IB",
+    "bureau_name" : "International Bureau",
+    "edocs_bureau_code" : "IB"
+  },
+  {
+    "id" : 15,
+    "bureau_code" : "BO",
+    "bureau_name" : "Offfice of Communication Business Opps",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 16,
+    "bureau_code" : "EB",
+    "bureau_name" : "Enforcement Bureau",
+    "edocs_bureau_code" : "EB"
+  },
+  {
+    "id" : 17,
+    "bureau_code" : "CG",
+    "bureau_name" : "Consumer and Governmental Affairs Bureau",
+    "edocs_bureau_code" : "CGB"
+  },
+  {
+    "id" : 18,
+    "bureau_code" : "MB",
+    "bureau_name" : "Media Bureau",
+    "edocs_bureau_code" : "MB"
+  },
+  {
+    "id" : 19,
+    "bureau_code" : "XX",
+    "bureau_name" : "Others",
+    "edocs_bureau_code" : "NA"
+  },
+  {
+    "id" : 21,
+    "bureau_code" : "WC",
+    "bureau_name" : "Wireline Competition Bureau",
+    "edocs_bureau_code" : "WCB"
+  },
+  {
+    "id" : 22,
+    "bureau_code" : "AU",
+    "bureau_name" : "Auctions",
+    "edocs_bureau_code" : "AU"
+  },
+  {
+    "id" : 23,
+    "bureau_code" : "CB",
+    "bureau_name" : "Office of Communications and Business Op",
+    "edocs_bureau_code" : "OCBO"
+  },
+  {
+    "id" : 24,
+    "bureau_code" : "PS",
+    "bureau_name" : "Public Safety and Homeland Security",
+    "edocs_bureau_code" : "PSHSB"
+  },
+  {
+    "id" : 25,
+    "bureau_code" : "WP",
+    "bureau_name" : "Wireless Telecom and Public Safety",
+    "edocs_bureau_code" : null
+  },
+  {
+    "id" : 26,
+    "bureau_code" : "OL",
+    "bureau_name" : "Office of Legislative Affairs",
+    "edocs_bureau_code" : "OLA"
+  },
+  {
+    "id" : 27,
+    "bureau_code" : "SP",
+    "bureau_name" : "Office of Strategic Planning and Analysi",
+    "edocs_bureau_code" : "OSP"
+  },
+  {
+    "id" : 28,
+    "bureau_code" : "LJ",
+    "bureau_name" : "Office of Administrative Law Judges",
+    "edocs_bureau_code" : "OALJ"
+  },
+  {
+    "id" : 29,
+    "bureau_code" : "IG",
+    "bureau_name" : "Office of the Inspector General",
+    "edocs_bureau_code" : "OIG"
+  },
+  {
+    "id" : 30,
+    "bureau_code" : "MR",
+    "bureau_name" : "Office of Media Relations",
+    "edocs_bureau_code" : "OMR"
+  },
+  {
+    "id" : 31,
+    "bureau_code" : "PD",
+    "bureau_name" : "Office of Workplace Diversity",
+    "edocs_bureau_code" : "OWPD"
+  },
+  {
+    "id" : 32,
+    "bureau_code" : "JG",
+    "bureau_name" : "Office of Chairman Genachowski",
+    "edocs_bureau_code" : "OCHJG"
+  },
+  {
+    "id" : 33,
+    "bureau_code" : "CM",
+    "bureau_name" : "Office of Commissioner McDowell",
+    "edocs_bureau_code" : "OCRMM"
+  },
+  {
+    "id" : 34,
+    "bureau_code" : "MC",
+    "bureau_name" : "Office of Commissioner Clyburn",
+    "edocs_bureau_code" : "OCMC"
+  }],
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z",
+      "pagination": {
+        "page": 1,
+        "per_page": 50,
+        "page_count": 1,
+        "total_count": 34
+      }
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

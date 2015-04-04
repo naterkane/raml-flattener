@@ -1,0 +1,18 @@
+{
+  "description": "Protecting and Promoting the Open Internet",
+  "filings": {
+    "last_30": "588625",
+    "total": "2026751"
+  },
+  "bureau": {
+    "name": "General (Multiple Bureaus)",
+    "code": "GN",
+    "id":   ""
+  },
+  "date_created": "sensible date format",
+  "date_closed": "ditto",
+  "subject": "how is this different from description?",
+  "state": "",
+  "consolidated": "RM-10803",
+  "comment_period": "ask hursh, other periods?"
+}

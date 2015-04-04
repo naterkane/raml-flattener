@@ -1,0 +1,719 @@
+{
+  "submission_type": [{
+    "id" : 1,
+    "submission_type" : "AI",
+    "submission_type_short" : "ANSWER INT",
+    "submission_type_description" : "ANSWER TO INTERROGATORY",
+    "flag_public" : true
+  },
+  {
+    "id" : 2,
+    "submission_type" : "AL",
+    "submission_type_short" : "APPEAL",
+    "submission_type_description" : "APPEAL",
+    "flag_public" : true
+  },
+  {
+    "id" : 3,
+    "submission_type" : "NA",
+    "submission_type_short" : "APPEARANCE",
+    "submission_type_description" : "APPEARANCE",
+    "flag_public" : true
+  },
+  {
+    "id" : 4,
+    "submission_type" : "AP",
+    "submission_type_short" : "APPLICATION",
+    "submission_type_description" : "APPLICATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 5,
+    "submission_type" : "AR",
+    "submission_type_short" : "APP REVIEW",
+    "submission_type_description" : "APPLICATION FOR REVIEW",
+    "flag_public" : true
+  },
+  {
+    "id" : 6,
+    "submission_type" : "NC",
+    "submission_type_short" : "CH ADDRESS",
+    "submission_type_description" : "CHANGE OF ADDRESS",
+    "flag_public" : true
+  },
+  {
+    "id" : 7,
+    "submission_type" : "CO",
+    "submission_type_short" : "COMMENT",
+    "submission_type_description" : "COMMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 8,
+    "submission_type" : "CT",
+    "submission_type_short" : "CORRECT TR",
+    "submission_type_description" : "CORRECTION TO TRANSCRIPT",
+    "flag_public" : true
+  },
+  {
+    "id" : 9,
+    "submission_type" : "CP",
+    "submission_type_short" : "COUNTER PROP",
+    "submission_type_description" : "COUNTERPROPOSAL",
+    "flag_public" : true
+  },
+  {
+    "id" : 10,
+    "submission_type" : "DE",
+    "submission_type_short" : "DECISION",
+    "submission_type_description" : "DECISION",
+    "flag_public" : false
+  },
+  {
+    "id" : 11,
+    "submission_type" : "DN",
+    "submission_type_short" : "DECLARE",
+    "submission_type_description" : "DECLARATION OF NO CONSIDERATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 12,
+    "submission_type" : "OD",
+    "submission_type_short" : "EXT TIME ORD",
+    "submission_type_description" : "DENIAL OF EXTENTION OF TIME",
+    "flag_public" : false
+  },
+  {
+    "id" : 13,
+    "submission_type" : "DP",
+    "submission_type_short" : "DEPOSIT",
+    "submission_type_description" : "DEPOSITION",
+    "flag_public" : true
+  },
+  {
+    "id" : 14,
+    "submission_type" : "OI",
+    "submission_type_short" : "DESIG ISSUES",
+    "submission_type_description" : "DESIGNATION ISSUES",
+    "flag_public" : true
+  },
+  {
+    "id" : 15,
+    "submission_type" : "DO",
+    "submission_type_short" : "DESIG ORDER",
+    "submission_type_description" : "DESIGNATION ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 16,
+    "submission_type" : "LF",
+    "submission_type_short" : "LICENSE FILE",
+    "submission_type_description" : "LICENSE FILE",
+    "flag_public" : "?"
+  },
+  {
+    "id" : 17,
+    "submission_type" : "ER",
+    "submission_type_short" : "ERRATA",
+    "submission_type_description" : "ERRATA, ERRATUM OR ADDENDUM",
+    "flag_public" : true
+  },
+  {
+    "id" : 18,
+    "submission_type" : "EC",
+    "submission_type_short" : "EXCEPTION",
+    "submission_type_description" : "EXCEPTION",
+    "flag_public" : true
+  },
+  {
+    "id" : 19,
+    "submission_type" : "EX",
+    "submission_type_short" : "EXHIBIT",
+    "submission_type_description" : "EXHIBIT",
+    "flag_public" : true
+  },
+  {
+    "id" : 20,
+    "submission_type" : "FN",
+    "submission_type_short" : "FURTH NPRM",
+    "submission_type_description" : "FURTHER NOTICE OF PROPOSED RULEMAKING",
+    "flag_public" : false
+  },
+  {
+    "id" : 21,
+    "submission_type" : "FI",
+    "submission_type_short" : "FURTH NOI",
+    "submission_type_description" : "FURTHER NOTICE OF INQUIRY",
+    "flag_public" : false
+  },
+  {
+    "id" : 22,
+    "submission_type" : "HD",
+    "submission_type_short" : "HDO",
+    "submission_type_description" : "HEARING DESIGNATION ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 23,
+    "submission_type" : "ID",
+    "submission_type_short" : "INIT DEC",
+    "submission_type_description" : "INITIAL DECISION",
+    "flag_public" : false
+  },
+  {
+    "id" : 24,
+    "submission_type" : "NI",
+    "submission_type_short" : "NOI",
+    "submission_type_description" : "INQUIRY",
+    "flag_public" : "?"
+  },
+  {
+    "id" : 25,
+    "submission_type" : "IS",
+    "submission_type_short" : "INT STATE",
+    "submission_type_description" : "INTEGRATION STATEMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 26,
+    "submission_type" : "NO",
+    "submission_type_short" : "NOTICE",
+    "submission_type_description" : "INTENT TO PARITICIPATE IN ORAL ARGUMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 27,
+    "submission_type" : "RQ",
+    "submission_type_short" : "REQUEST",
+    "submission_type_description" : "JOINT REQUEST FOR APPROVAL OF SETTLEMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 28,
+    "submission_type" : "PL",
+    "submission_type_short" : "LEAVE AMEND",
+    "submission_type_description" : "LEAVE TO AMEND",
+    "flag_public" : true
+  },
+  {
+    "id" : 29,
+    "submission_type" : "LT",
+    "submission_type_short" : "LETTER",
+    "submission_type_description" : "LETTER",
+    "flag_public" : true
+  },
+  {
+    "id" : 30,
+    "submission_type" : "MA",
+    "submission_type_short" : "MO&A",
+    "submission_type_description" : "MEMORANDUM OPINION AND AUTHORIZATION",
+    "flag_public" : false
+  },
+  {
+    "id" : 31,
+    "submission_type" : "MO",
+    "submission_type_short" : "MO&O",
+    "submission_type_description" : "MEMORANDUM OPINION AND ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 32,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION",
+    "flag_public" : true
+  },
+  {
+    "id" : 33,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION FOR EXTENSION OF TIME",
+    "flag_public" : true
+  },
+  {
+    "id" : 34,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION FOR PRODUCTION OF DOCUMENTS",
+    "flag_public" : true
+  },
+  {
+    "id" : 35,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION FOR PROTECTIVE OR CLARIFYING ORDER",
+    "flag_public" : true
+  },
+  {
+    "id" : 36,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION FOR SUMMARY DECISION",
+    "flag_public" : true
+  },
+  {
+    "id" : 37,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO ACCEPT LATE FILED COMMENTS",
+    "flag_public" : true
+  },
+  {
+    "id" : 38,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO COMPEL",
+    "flag_public" : true
+  },
+  {
+    "id" : 39,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO DISMISS",
+    "flag_public" : true
+  },
+  {
+    "id" : 40,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO ENLARGE ISSUE",
+    "flag_public" : true
+  },
+  {
+    "id" : 41,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO QUASH",
+    "flag_public" : true
+  },
+  {
+    "id" : 42,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO REOPEN THE RECORD",
+    "flag_public" : true
+  },
+  {
+    "id" : 43,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO STRIKE",
+    "flag_public" : true
+  },
+  {
+    "id" : 44,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "MOTION TO SUSPEND PROCEDURAL DATES",
+    "flag_public" : true
+  },
+  {
+    "id" : 45,
+    "submission_type" : "NO",
+    "submission_type_short" : "NOTICE",
+    "submission_type_description" : "NOTICE OF EXPARTE",
+    "flag_public" : true
+  },
+  {
+    "id" : 46,
+    "submission_type" : "NA",
+    "submission_type_short" : "APPEARANCE",
+    "submission_type_description" : "NOTICE OF APPEARANCE",
+    "flag_public" : true
+  },
+  {
+    "id" : 47,
+    "submission_type" : "NC",
+    "submission_type_short" : "CH ADDRESS",
+    "submission_type_description" : "NOTICE OF CHANGE OF ADDRESS",
+    "flag_public" : true
+  },
+  {
+    "id" : 48,
+    "submission_type" : "ND",
+    "submission_type_short" : "DEPOSITION",
+    "submission_type_description" : "NOTICE OF DEPOSITION",
+    "flag_public" : true
+  },
+  {
+    "id" : 49,
+    "submission_type" : "NI",
+    "submission_type_short" : "NOI",
+    "submission_type_description" : "NOTICE OF INQUIRY",
+    "flag_public" : false
+  },
+  {
+    "id" : 50,
+    "submission_type" : "NO",
+    "submission_type_short" : "NOTICE",
+    "submission_type_description" : "NOTICE OF INTENT TO PARTICIPATE IN ORAL ARGUMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 51,
+    "submission_type" : "NO",
+    "submission_type_short" : "NOTICE",
+    "submission_type_description" : "NOTICE OF INTENT TO TAKE DEPOSITION",
+    "flag_public" : true
+  },
+  {
+    "id" : 52,
+    "submission_type" : "NO",
+    "submission_type_short" : "NOTICE",
+    "submission_type_description" : "NOTICE OF PRE-HEARING CONFERENCE",
+    "flag_public" : true
+  },
+  {
+    "id" : 53,
+    "submission_type" : "NP",
+    "submission_type_short" : "NPRM",
+    "submission_type_description" : "NOTICE OF PROPOSED RULEMAKING",
+    "flag_public" : false
+  },
+  {
+    "id" : 54,
+    "submission_type" : "WD",
+    "submission_type_short" : "WITHDRAW",
+    "submission_type_description" : "NOTICE OF WITHDRAWAL OF COUNSEL",
+    "flag_public" : true
+  },
+  {
+    "id" : 55,
+    "submission_type" : "NW",
+    "submission_type_short" : "NOT WITNESS",
+    "submission_type_description" : "NOTIFICATION OF WITNESS",
+    "flag_public" : true
+  },
+  {
+    "id" : 56,
+    "submission_type" : "OO",
+    "submission_type_short" : "O&O",
+    "submission_type_description" : "OPINION AND ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 57,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION",
+    "flag_public" : true
+  },
+  {
+    "id" : 58,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO PETITION FOR RECONSIDERATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 59,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO MOTION TO COMPEL",
+    "flag_public" : true
+  },
+  {
+    "id" : 60,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO MOTION TO STRIKE",
+    "flag_public" : true
+  },
+  {
+    "id" : 61,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO ANSWERS TO INTERROGATORIES",
+    "flag_public" : true
+  },
+  {
+    "id" : 62,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO NOTICE OF DEPOSITION",
+    "flag_public" : true
+  },
+  {
+    "id" : 63,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO MOTION FOR PRODUCTION OF DOCUMENTS",
+    "flag_public" : true
+  },
+  {
+    "id" : 64,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO MOTION FOR PROTECTIVE OR CLARIFYING",
+    "flag_public" : true
+  },
+  {
+    "id" : 65,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO NOTICE OF DEPOSITION UPON ORAL EXAMI",
+    "flag_public" : true
+  },
+  {
+    "id" : 66,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO MOTION FOR PRODUCTION OF DOCUMENTS",
+    "flag_public" : true
+  },
+  {
+    "id" : 67,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "OPPOSITION TO COMPEL",
+    "flag_public" : true
+  },
+  {
+    "id" : 68,
+    "submission_type" : "OR",
+    "submission_type_short" : "ORDER",
+    "submission_type_description" : "ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 69,
+    "submission_type" : "OA",
+    "submission_type_short" : "O&A",
+    "submission_type_description" : "ORDER & AUTHORIZATION",
+    "flag_public" : false
+  },
+  {
+    "id" : 70,
+    "submission_type" : "OC",
+    "submission_type_short" : "A & CERT ORD",
+    "submission_type_description" : "ORDER, AUTHORIZATION AND CERTIFICATE",
+    "flag_public" : false
+  },
+  {
+    "id" : 71,
+    "submission_type" : "OD",
+    "submission_type_short" : "EXT TIME ORD",
+    "submission_type_description" : "ORDER DENYING EXTENSION OF TIME",
+    "flag_public" : false
+  },
+  {
+    "id" : 72,
+    "submission_type" : "OI",
+    "submission_type_short" : "DESIG ISSUES",
+    "submission_type_description" : "ORDER DESIGNATING ISSUES FOR INVESTIGATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 73,
+    "submission_type" : "ET",
+    "submission_type_short" : "EXT TIME ORD",
+    "submission_type_description" : "ORDER GRANTING EXTENSION OF TIME",
+    "flag_public" : false
+  },
+  {
+    "id" : 74,
+    "submission_type" : "ON",
+    "submission_type_short" : "RECON ORDER",
+    "submission_type_description" : "ORDER ON RECONSIDERATION",
+    "flag_public" : false
+  },
+  {
+    "id" : 75,
+    "submission_type" : "OS",
+    "submission_type_short" : "STAY FILE WN",
+    "submission_type_description" : "ORDER STAYING FILING WINDOW",
+    "flag_public" : false
+  },
+  {
+    "id" : 76,
+    "submission_type" : "SC",
+    "submission_type_short" : "SHOW CAUSE",
+    "submission_type_description" : "ORDER TO SHOW CAUSE AND HEARING DESIGNATION ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 77,
+    "submission_type" : "OP",
+    "submission_type_short" : "OPPOSE",
+    "submission_type_description" : "PARTIAL OPPOSITION",
+    "flag_public" : true
+  },
+  {
+    "id" : 78,
+    "submission_type" : "PL",
+    "submission_type_short" : "LEAVE AMEND",
+    "submission_type_description" : "PETITION FOR LEAVE TO AMEND",
+    "flag_public" : true
+  },
+  {
+    "id" : 79,
+    "submission_type" : "PR",
+    "submission_type_short" : "PET RECON",
+    "submission_type_description" : "PETITION FOR RECONSIDERATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 80,
+    "submission_type" : "PV",
+    "submission_type_short" : "PET REVIEW",
+    "submission_type_description" : "PETITION FOR REVIEW",
+    "flag_public" : true
+  },
+  {
+    "id" : 81,
+    "submission_type" : "PU",
+    "submission_type_short" : "PET RM",
+    "submission_type_description" : "PETITION FOR RULEMAKING",
+    "flag_public" : false
+  },
+  {
+    "id" : 82,
+    "submission_type" : "PW",
+    "submission_type_short" : "PET WAIVER",
+    "submission_type_description" : "PETITION FOR WAIVER",
+    "flag_public" : true
+  },
+  {
+    "id" : 83,
+    "submission_type" : "PO",
+    "submission_type_short" : "PREHEARING",
+    "submission_type_description" : "PREHEARING ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 84,
+    "submission_type" : "MN",
+    "submission_type_short" : "MOTION",
+    "submission_type_description" : "PRODUCTION OF DOCUMENTS",
+    "flag_public" : true
+  },
+  {
+    "id" : 85,
+    "submission_type" : "PP",
+    "submission_type_short" : "PROOF PUB",
+    "submission_type_description" : "PROOF OF PUBLICATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 86,
+    "submission_type" : "PF",
+    "submission_type_short" : "PROP FINDING",
+    "submission_type_description" : "PROPOSED FINDINGS OR REPLY FINDINGS",
+    "flag_public" : true
+  },
+  {
+    "id" : 87,
+    "submission_type" : "NP",
+    "submission_type_short" : "NPRM",
+    "submission_type_description" : "PROPOSED RULEMAKING",
+    "flag_public" : false
+  },
+  {
+    "id" : 88,
+    "submission_type" : "PN",
+    "submission_type_short" : "PUB NOTICE",
+    "submission_type_description" : "PUBLIC NOTICE",
+    "flag_public" : false
+  },
+  {
+    "id" : 89,
+    "submission_type" : "RC",
+    "submission_type_short" : "REPLY COMM",
+    "submission_type_description" : "REPLY TO COMMENTS",
+    "flag_public" : true
+  },
+  {
+    "id" : 90,
+    "submission_type" : "RE",
+    "submission_type_short" : "RECON",
+    "submission_type_description" : "RECONSIDERATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 91,
+    "submission_type" : "RR",
+    "submission_type_short" : "REPLY OPPOSE",
+    "submission_type_description" : "REPLY TO OPPOSITION TO PETITION FOR RECONSIDERA",
+    "flag_public" : true
+  },
+  {
+    "id" : 92,
+    "submission_type" : "RP",
+    "submission_type_short" : "REPLY PET",
+    "submission_type_description" : "REPLY TO PETITION FOR RECONSIDERATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 93,
+    "submission_type" : "RT",
+    "submission_type_short" : "REPORT",
+    "submission_type_description" : "REPORT",
+    "flag_public" : true
+  },
+  {
+    "id" : 94,
+    "submission_type" : "RO",
+    "submission_type_short" : "R&O",
+    "submission_type_description" : "REPORT AND ORDER",
+    "flag_public" : false
+  },
+  {
+    "id" : 95,
+    "submission_type" : "RQ",
+    "submission_type_short" : "REQUEST",
+    "submission_type_description" : "REQUEST",
+    "flag_public" : true
+  },
+  {
+    "id" : 96,
+    "submission_type" : "RQ",
+    "submission_type_short" : "REQUEST",
+    "submission_type_description" : "REQUEST FOR APPROVAL OF SETTLEMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 97,
+    "submission_type" : "RQ",
+    "submission_type_short" : "REQUEST",
+    "submission_type_description" : "REQUEST FOR EXTENSION OF TIME",
+    "flag_public" : true
+  },
+  {
+    "id" : 98,
+    "submission_type" : "RQ",
+    "submission_type_short" : "REQUEST",
+    "submission_type_description" : "REQUEST FOR ORAL ARGUMENT",
+    "flag_public" : true
+  },
+  {
+    "id" : 99,
+    "submission_type" : "RQ",
+    "submission_type_short" : "REQUEST",
+    "submission_type_description" : "REQUEST FOR SUPPLEMENTAL INFORMATION",
+    "flag_public" : true
+  },
+  {
+    "id" : 100,
+    "submission_type" : "PU",
+    "submission_type_short" : "PET RM",
+    "submission_type_description" : "RULEMAKING",
+    "flag_public" : false
+  }],
+  "_metadata": {
+    "response": {
+      "time": "2014-12-07T14:12:43.511Z",
+      "pagination": {
+        "page": 3,
+        "per_page": 2,
+        "page_count": 500,
+        "total_count": 1000
+      }
+    },
+    "request": {
+      "user": null,
+      "ip": "192.168.1.111",
+      "time": "2014-12-07T14:12:42.823Z",
+      "params": null
+    }
+  }
+}

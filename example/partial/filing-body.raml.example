@@ -1,0 +1,6 @@
+application/json:
+  example: |
+    {
+      "id": 1,
+      "proceeding_id": "14-28"
+    }

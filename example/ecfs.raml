@@ -1,0 +1,402 @@
+#%RAML 0.8
+title: ECFS
+version: v0.2.2
+mediaType: application/json
+
+resourceTypes:
+  - readOnlyCollection:
+      description: Collection of available <<resourcePathName>> in ECFS.
+      get:
+        description: Get a list of <<resourcePathName>>.
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  <<exampleCollection>>
+                schema: <<schemaCollection>>
+  - collection:
+      is: [versionable]
+      securedBy: [null, oauth_2_0]
+      description: Collection of available <<resourcePathName>> in ECFS.
+      get:
+        description: |
+          Get a list of <<resourcePathName>>.  If called anonymously,
+          this will return all public <<resourcePathName>>.
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  <<exampleCollection>>
+                schema: <<schemaCollection>>
+      post:
+        description: |
+          Add a new <<resourcePathName|!singularize>> to ECFS.
+        queryParameters:
+          access_token:
+            description: "The access token provided by the authentication application"
+            example: AABBCCDD
+            required: true
+            type: string
+        body:
+          application/json:
+            schema: <<resourcePathName|!singularize>>
+            example: |
+              <<exampleItem>>
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  { "message": "The <<resourcePathName|!singularize>> has been properly entered" }
+  - collection-item:
+      is: [versionable]
+      securedBy: [null, oauth_2_0]
+      description: Entity representing a <<resourcePathName|!singularize>>
+      get:
+        description: |
+          Get the <<resourcePathName|!singularize>>
+          with <<resourcePathName|!singularize>>Id =
+          {<<resourcePathName|!singularize>>Id}
+          If called anonymously, the <<resourcePathName|!singularize>>
+          must be public.
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  <<exampleItem>>
+                schema: <<schemaItem>>
+          404:
+            body:
+              application/json:
+                example: |
+                  {"message": "<<resourcePathName|!singularize>> not found" }
+      head:
+        description: |
+          Check if the <<resourcePathName|!singularize>>
+          with <<resourcePathName|!singularize>>Id =
+          {<<resourcePathName|!singularize>>Id} exists
+          If called anonymously, the <<resourcePathName|!singularize>>
+          must be public.
+        responses:
+          200: #TODO is this right? "302 wasn't correct. 204 would be ok, but 200 is actually correct." - nater
+            headers:
+          404:
+            body:
+              application/json:
+                example: |
+                  {"message": "<<resourcePathName|!singularize>> not found" }
+      put:
+        securedBy: [oauth_2_0]
+        description: |
+          Update the <<resourcePathName|!singularize>>
+          with <<resourcePathName|!singularize>>Id =
+          {<<resourcePathName|!singularize>>Id}.
+          Authentication is required.
+        body:
+          application/json:
+            schema: <<schemaPut>>
+            example: |
+              <<examplePut>>
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  <<exampleItem>>
+                schema: <<schemaItem>>
+          404:
+            body:
+              application/json:
+                example: |
+                  {"message": "<<resourcePathName|!singularize>> not found" }
+
+traits:
+  - searchable:
+      queryParameters:
+        query:
+          description: |
+            JSON array [["query","value1","operator1"],["field2","value2","operator2"],...,["fieldN","valueN","operatorN"]] <<description>>
+          example: |
+            <<example>>
+  - aggregatable:
+      queryParameters:
+        search_type:
+          description: String What type of search?
+          example: curl -XPOST 'http://elkdomain.fcc.gov:9200/ecfs/_search?search_type=count' -d <<data>>
+        data:
+          description: |
+            JSON object {"aggs": { "aggregation_name": { "terms": { "field": "text", "order": { "somefield": "desc" } } } } }
+            example: |
+              <<example>>
+  - orderable:
+      queryParameters:
+        orderBy:
+          description: |
+            Order by field: <<fieldsList>>
+          type: string
+          required: false
+        order:
+          description: Order
+          enum: [desc, asc]
+          default: desc
+          required: false
+  - formattable:
+      queryParameters:
+        format:
+          description: format for the results
+          enum: [json, rss]
+          default: json
+  - pageable:
+      queryParameters:
+        offset:
+          description: Skip over a number of elements by specifying an offset value for the query
+          type: integer
+          required: false
+          example: 20
+          default: 0
+        limit:
+          description: Limit the number of elements on the response
+          type: integer
+          required: false
+          example: 80
+          default: 30
+  - versionable:
+      headers:
+        Accept-Version:
+          description: the version that is acceptable according to semver.org matching
+          type: string
+          example: ~1
+      responses:
+        200:
+          headers:
+            Version:
+              description: the (semver) version provided
+              type: string
+              example: 1.0.6
+
+securitySchemes:
+  - oauth_2_0:
+      description: |
+        ECFS supports OAuth 2.0 for authenticating internal ECFS-API requests
+      type: OAuth 2.0
+      describedBy:
+        headers:
+          Authorization:
+            description: |
+              Used to send a valid OAuth 2 access token. Do not use with the "access_token" query string parameter.
+            type: string
+        queryParameters:
+          access_token:
+            description: |
+              Used to send a valid OAuth 2 access token. Do not use together with the "Authorization" header
+            type: string
+        responses:
+          401:
+            description: |
+              Bad or expired token. This can happen if the user or ECFS-API revoked or expired an access token. To fix, you should re-authenticate the user.
+          403:
+            description: |
+              Bad OAuth request (wrong consumer key, bad nonce, expired timestamp...). Unfortunately, re-authenticated the user won't help here.
+      settings:
+        authorizationUri: https://apps.fcc.gov/ecfs/oauth2/authorize
+        accessTokenUri: https://api.apps.fcc.gov/v1/oauth2/token
+        authorizationGrants: [ code, token ]
+        ## scopes to be filled in later.
+        scopes: "user, proceeding:put, document:put, hotdockets:put"
+
+/filings:
+  type:
+    collection:
+      exampleCollection: !include examples/filings.json
+      exampleItem: !include examples/filing.json
+      schemaCollection: !include schemas/filingsDefinition.json
+  get:
+    is: [
+          searchable: {description: "matching the field names: proceeding.name", example: "[\"proceeding.name\", \"14-28\", \"equals\"]"},
+          ##TODO fill this out as examples
+          #contactInfo:
+          #dateSearch: #TODO
+          #address:
+          #advanced:
+          #confirmationNumber:
+          #  description: ""
+          orderable: {fieldsList: "createDate"},
+          formattable,
+          pageable
+        ]
+  /{filingId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/filing.json
+        examplePut: !include examples/filing.json
+        schemaItem: !include schemas/filingDefinition.json
+        schemaPut: !include schemas/filingDefinition.json
+  /status/{confirmationId}:
+    get:
+      description: |
+        Get a single filing by confirmation ID
+      responses:
+        200:
+          body:
+            application/json:
+              schema: !include schemas/filingDefinition.json
+              example: !include examples/filing.json
+/proceedings:
+  type:
+    collection:
+      exampleCollection: !include examples/proceedings.json
+      exampleItem: !include examples/proceeding.json
+      schemaCollection: !include schemas/proceedingsDefinition.json #TODO
+  /search:
+    get:
+      is: [
+            searchable: {description: "search across metadata: name, description, ...", example: "[\"description\", \"Open I\", \"like\"]"},
+            #bureau:  #TODO set these examples up
+            #subject:
+            #bureau_id:
+            #applicant:
+            #status:
+            #date:
+            #allotment:
+            orderable: {fieldsList: "createDate, name"},
+            pageable
+          ]
+  /hotdockets:
+    type:
+      readOnlyCollection:
+        exampleCollection: !include examples/hotdockets.json
+        schemaCollection: !include schemas/proceedingsDefinition.json
+    get:
+      is: [
+            searchable: {description: "with valid searchable fields: name, description, ...", example: "[\"bureau\", \"GN\", \"equals\"]"},
+          ]
+  /{proceedingId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/proceeding.json
+        examplePut: !include examples/proceeding.json
+        schemaItem: !include schemas/proceedingDefinition.json
+        schemaPut: !include schemas/proceedingDefinition.json
+/documents:
+  type:
+    collection:
+      exampleCollection: !include examples/documents.json
+      exampleItem: !include examples/document.json
+      schemaCollection: !include schemas/documentsDefinition.json
+  get:
+    is: [
+          searchable: {description: "File Description", example: "Wireline"},
+          orderable: {fieldsList: "document_id"},
+          pageable
+        ]
+  /{documentId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/document.json
+        examplePut: !include examples/document.json
+        schemaItem: !include schemas/documentDefinition.json
+        schemaPut: !include schemas/documentDefinition.json
+    /file-content:
+      securedBy: [null, oauth_2_0]
+      description: The file itself
+      get:
+        responses:
+          200:
+            body:
+              binary/octet-stream:
+                example: |
+                  !include: examples/document.pdf
+      post:
+        body:
+          binary/octet-stream:
+          multipart/form-data:
+            formParameters:
+              file:
+                description: The file to be uploaded
+                required: true
+                type: file
+/bureaus:
+  type:
+    collection:
+      exampleCollection: !include examples/bureaus.json
+      exampleItem:       !include examples/bureau.json
+      schemaCollection: !include schemas/bureausDefinition.json
+  /{bureauId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/bureau.json
+        examplePut: !include examples/bureau.json
+        schemaItem: !include schemas/bureauDefinition.json
+        schemaPut: !include schemas/bureauDefinition.json
+/users:
+  type:
+    collection:
+      exampleCollection: !include examples/users.json
+      exampleItem: !include examples/user.json
+      schemaCollection: !include schemas/usersDefinition.json
+  get:
+    is: [
+          searchable: {description: "this is the description", example: "this is the example"},
+          orderable: {fieldsList: "permission_level_id, first_name, last_name, new_user_name"},
+          pageable
+        ]
+  /{userId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/user.json
+        examplePut: !include examples/user.json
+        schemaItem: !include schemas/userDefinition.json
+        schemaPut: !include schemas/userDefinition.json
+/holidays:
+  type:
+    collection:
+      exampleCollection: !include examples/holidays.json
+      exampleItem:       !include examples/holiday.json
+      schemaCollection: !include schemas/holidaysDefinition.json
+  get:
+    is: [
+          orderable: {fieldsList: "holiday_date, holiday_type"},
+          pageable
+        ]
+  /{holidayId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/holiday.json
+        examplePut: !include examples/holiday.json
+        schemaItem: !include schemas/holidayDefinition.json
+        schemaPut: !include schemas/holidayDefinition.json
+/submission-types:
+  type:
+    collection:
+      exampleCollection: !include examples/submission-types.json
+      exampleItem:       !include examples/submission-type.json
+      schemaCollection: !include schemas/submission-typesDefinition.json
+  /{collectionId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/submission-type.json
+        examplePut: !include examples/submission-type.json
+        schemaItem: !include schemas/submission-typesDefinition.json
+        schemaPut: !include schemas/submission-typeDefinition.json
+/states:
+  type:
+    collection:
+      exampleCollection: !include examples/states.json
+      exampleItem:       !include examples/state.json
+      schemaCollection: !include schemas/statesDefinition.json
+  /{collectionId}:
+    type:
+      collection-item:
+        exampleItem: !include examples/state.json
+        examplePut: !include examples/state.json
+        schemaItem: !include schemas/stateDefinition.json
+        schemaPut: !include schemas/stateDefinition.json
+/search:
+  type:
+    collection:
+      exampleCollection: !include examples/filings.json
+      exampleItem: !include examples/filing.json
+      schemaCollection: !include schemas/filingsDefinition.json
