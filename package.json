@@ -1,0 +1,29 @@
+{
+  "name": "raml-flattener",
+  "version": "0.0.1",
+  "description": "Flatten Raml files that !include external sources into a single, valid file.",
+  "homepage": "https://github.com/naterkane/raml-flattener",
+  "bugs": "https://github.com/naterkane/raml-flattener/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:naterkane/raml-flattener.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cli": "^0.6.6",
+    "lodash": "^2.4.1",
+    "raml-parser": "^0.8.10"
+  },
+  "bin": {
+    "raml-flattener": "./cli.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "pretest": "API_SPEC_PORT=3002 pm2 start -f server.js --name testserver",
+    "posttest": "pm2 delete testserver",
+    "test": "node rparse.js && node node_modules/raml2html/lib/raml2html.js raml/ecfs.raml > ecfs.html && curl http://localhost:3002/proceedings",
+    "preuninstall": "pm2 delete server"
+  },
+  "author": "Nater Kane <nater@naterkane.com> (http://github.com/naterkane)"
+
+}
