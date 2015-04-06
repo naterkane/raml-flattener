@@ -26,7 +26,7 @@ function Flattener(infile, outfile){
   console.log('importing ' + infile + ' and parsing to ' + outfile + ' with resources from ' + basepath);
 
   raml.composeFile(infile).then(function(rootNode) {
-    var doclines = rootNode.start_mark.buffer.split('\n'),
+    var doclines = (rootNode.start_mark.buffer + '\n').split('\n'),
         newdoc = [],
         c = 0,
         msg = '';
@@ -44,8 +44,14 @@ function Flattener(infile, outfile){
           msg = 'importing external files for ' + doclines.length + ' lines';
           console.log(msg);
         }
-        console.info('line ' + c + ': importing ' + line.match(/\!include\s(.*)/)[0].split(' ')[1]);
-        include = fs.readFileSync(basepath + line.match(/\!include\s(.*)/)[0].split(' ')[1], 'utf8');
+        console.info('line ' + c + ': importing ' + basepath + line.match(/\!include\s(.*)/)[0].split(' ')[1]);
+        if(include = fs.readFileSync(basepath + line.match(/\!include\s(.*)/)[0].split(' ')[1], 'utf8')){
+          console.log('yes');
+        } else {
+          console.log('no');
+
+        }
+        console.log('ok let\'s calculate buffer');
         /**
          * let's maintain our indentation since raml is yaml-ish it's important
          */
@@ -66,7 +72,7 @@ function Flattener(infile, outfile){
     });
     console.log('done loop');
     var output = newdoc.join('\n');
-    console.log('output ' + output);
+    //console.log('output ' + output);
     fs.writeFile(outfile,output, 'utf8',function(err) {
           if (err) {
             console.warn(err);
@@ -96,3 +102,4 @@ function Flattener(infile, outfile){
 }
 //test it here
 var flat = new Flattener('example/ecfs.raml');
+//console.log(fs.readFileSync('example/schemas/filingsDefinition.json','utf8'));
